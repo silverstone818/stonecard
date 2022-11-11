@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="gameStyle.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>돌바카라</title>
+    <div id = "grid">
+        <input id="check-btn" type="checkbox"/>
+        <label for="check-btn">≡</label>
+        <nav class = "menubars">
+            <ul id = "example2" class = "menu">
+                <li><h3 class = "gameli">Game List</h3></li>
+                <li><a href="Baccrat.html">바카라</a></li>
+            </ul>
+        </nav>    
+        <nav class = "menubars2">
+            <ul id = "example2" class = "menu">
+                <li><h3 class = "gameli">Batting</h3></li>
+                <li><div></div></li>
+                <li><input type = "number"  class = "_input" id = "p_win" placeholder = "Player win"></li>
+                <li><input type = "number"  class = "_input" id = "b_win" placeholder = "Banker win"></li>
+                <li><input type = "number"  class = "_input" id = "p_pair" placeholder = "Player Pair"></li>
+                <li><input type = "number"  class = "_input" id = "b_pair" placeholder = "Banker Pair"></li>
+                <li><input type = "number"  class = "_input" id = "tie" placeholder = "Tie Bet"></li>
+                <li><h2>잔고</h2></li>
+                <li><h1 id = "p_money">100000</h1></li>
+            </ul>
+        </nav>
+        <div class = "main">
+            <a href="index.html">돌트럼프</a>
+        </div>
+    </div>
+</head>
+<body>
+    <div class = "board1" id = "b_cell"></div>
+    <div id = "p_score" class = "Score1">0</div>
+    <button class="btn" onclick = "Deel()"><span>Betting</span></button>
+    <div id = "b_score" class = "Score2">0</div>
+    <div class = "board2" id = "p_cell"></div>
+    <script src = "card_js.js"></script>
+</body>
+</html>
