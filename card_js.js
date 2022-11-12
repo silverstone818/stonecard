@@ -318,7 +318,7 @@ function Deel(){
   let p_money = document.getElementById('p_money');
 
   let n_money = 0;
-  n_money += p_win + b_win + p_pair + b_pair + tie;
+  n_money += Number(p_win) + Number(b_win) + Number(p_pair) + Number(b_pair) + Number(tie);
   console.log(n_money);
   if(money < n_money){
     alert('잔액이 부족합니다.');
