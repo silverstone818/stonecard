@@ -316,12 +316,15 @@ function Deel(){
   let b_pair = document.getElementById('b_pair').value;
   let tie = document.getElementById('tie').value;
   let p_money = document.getElementById('p_money');
-  
-  if(money < p_win + b_win + p_pair + b_pair + tie){
+
+  let n_money = 0;
+  n_money += p_win + b_win + p_pair + b_pair + tie;
+  console.log(n_money);
+  if(money < n_money){
     alert('잔액이 부족합니다.');
     return;
   }
-  
+
   if(money <= 0){
     btn.disabled = true;
     return;
